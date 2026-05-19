@@ -76,3 +76,4 @@ env/
 .nextflow/
 .nextflow.log*
 work/
+**/work/

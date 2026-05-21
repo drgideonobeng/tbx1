@@ -1,0 +1,13 @@
+# phase3b/params/tbx1-phase3b.yml
+project_name:   "Tbx1_ctrl_vs_ko_phase3b"
+
+clustered_rds:  "${projectDir}/../results/phase3a/integrated/objects/03_integrated_clustered.rds"
+cluster_labels: "${projectDir}/cluster_labels_integrated.csv"
+
+min_cells:      10
+lfc_threshold:  0.25
+padj_threshold: 0.05
+go_padj:        0.05
+go_min_genes:   5
+
+resultsdir:     "${projectDir}/../results/phase3b"

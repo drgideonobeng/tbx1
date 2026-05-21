@@ -91,6 +91,23 @@ process RUN_CLUSTREE {
         """
 }
 
+// --- PROCESS 5: Find cluster markers ---
+process FIND_MARKERS {
+    publishDir "${params.resultsdir}/tables", mode: 'copy', pattern: "*.csv"
+    input:
+        path clustered_rds
+    output:
+        path "05_all_markers.csv"
+        path "05_top5_markers_per_cluster.csv"
+    script:
+        """
+        Rscript ${projectDir}/scripts/05_find_markers.R \
+            ${clustered_rds} \
+            05_all_markers.csv \
+            05_top5_markers_per_cluster.csv
+        """
+}
+
 // =============================================================================
 // WORKFLOW
 // =============================================================================
@@ -128,4 +145,5 @@ workflow {
     )
 
     RUN_CLUSTREE(CLUSTER_INTEGRATED.out.rds)
+    FIND_MARKERS(CLUSTER_INTEGRATED.out.rds)
 }

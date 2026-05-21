@@ -5,6 +5,9 @@ barcodes_url:   "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM5169142&forma
 features_url:   "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM5169142&format=file&file=GSM5169142%5FTbx1%2Dwt%2DE85%5Ffeatures%2Etsv%2Egz"
 matrix_url:     "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM5169142&format=file&file=GSM5169142%5FTbx1%2Dwt%2DE85%5Fmatrix%2Emtx%2Egz"
 
-resultsdir:     "${projectDir}/../results/e85"
+resultsdir:     "${projectDir}/../results/phase1/e85"
 datadir:        "${projectDir}/../data/e85"
 workDir:        "${projectDir}/../work/e85"
+
+max_genes:      5000
+cluster_res:    0.6

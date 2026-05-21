@@ -1,8 +1,8 @@
 # phase2/params/tbx1-E85.yml
 project_name:   "Tbx1_E85"
 
-clustered_rds:  "${projectDir}/../results/e85/objects/06_seurat_clustered.rds"
-resultsdir:     "${projectDir}/../results/e85"
+clustered_rds:  "${projectDir}/../results/phase1/e85/objects/06_seurat_clustered.rds"
+resultsdir:     "${projectDir}/../results/phase2/e85"
 
 cluster_labels: "${projectDir}/../config/cluster_labels/e85.csv"
 marker_genes:   "Tbx1,Fgf8,Isl1,Nkx2-5,Pax9,Six1"

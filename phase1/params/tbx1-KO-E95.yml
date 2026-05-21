@@ -1,0 +1,13 @@
+# phase1/params/tbx1-KO-E95.yml
+project_name:   "Tbx1_KO_E95"
+
+barcodes_url:   "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM5169145&format=file&file=GSM5169145%5FTbx1%2DKO%2DE95%5Fbarcodes%2Etsv%2Egz"
+features_url:   "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM5169145&format=file&file=GSM5169145%5FTbx1%2DKO%2DE95%5Fgenes%2Etsv%2Egz"
+matrix_url:     "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM5169145&format=file&file=GSM5169145%5FTbx1%2DKO%2DE95%5Fmatrix%2Emtx%2Egz"
+
+resultsdir:     "${projectDir}/../results/phase1/ko-e95"
+datadir:        "${projectDir}/../data/ko-e95"
+workDir:        "${projectDir}/../work/ko-e95"
+
+max_genes:      5000
+cluster_res:    0.6

@@ -1,0 +1,12 @@
+# phase1/params/tbx1-KO-E85.yml
+project_name:   "Tbx1_KO_E85"
+
+barcodes_url:   "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM5169143&format=file&file=GSM5169143%5FTbx1%2DKO%2DE85%5Fbarcodes%2Etsv%2Egz"
+features_url:   "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM5169143&format=file&file=GSM5169143%5FTbx1%2DKO%2DE85%5Ffeatures%2Etsv%2Egz"
+matrix_url:     "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM5169143&format=file&file=GSM5169143%5FTbx1%2DKO%2DE85%5Fmatrix%2Emtx%2Egz"
+
+resultsdir:     "${projectDir}/../results/phase1/ko-e85"
+datadir:        "${projectDir}/../data/ko-e85"
+workDir:        "${projectDir}/../work/ko-e85"
+
+cluster_res:    0.6

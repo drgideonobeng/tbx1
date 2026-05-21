@@ -1,0 +1,13 @@
+# phase3a/params/tbx1-ctrl-vs-ko.yml
+project_name:   "Tbx1_ctrl_vs_ko"
+
+wt_e85_rds:     "${projectDir}/../results/phase1/e85/objects/04_seurat_filtered.rds"
+wt_e95_rds:     "${projectDir}/../results/phase1/e95/objects/04_seurat_filtered.rds"
+ko_e85_rds:     "${projectDir}/../results/phase1/ko-e85/objects/04_seurat_filtered.rds"
+ko_e95_rds:     "${projectDir}/../results/phase1/ko-e95/objects/04_seurat_filtered.rds"
+
+resultsdir:     "${projectDir}/../results/phase3a/integrated"
+
+cluster_res:    0.4
+scvi_dims:      30
+n_hvgs:         3000

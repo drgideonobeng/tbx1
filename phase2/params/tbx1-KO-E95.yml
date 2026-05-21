@@ -1,0 +1,8 @@
+# phase2/params/tbx1-KO-E95.yml
+project_name:   "Tbx1_KO_E95"
+
+clustered_rds:  "${projectDir}/../results/phase1/ko-e95/objects/06_seurat_clustered.rds"
+resultsdir:     "${projectDir}/../results/phase2/ko-e95"
+
+cluster_labels: "${projectDir}/../config/cluster_labels/ko-e95.csv"
+marker_genes:   "Tbx1,Fgf8,Isl1,Nkx2-5,Pax9,Six1"

@@ -1,7 +1,7 @@
 nextflow.enable.dsl=2
 
 // =============================================================================
-// main.nf — Phase 1: Single-Cell RNA-seq Pipeline (Mesp1-cardiopharyngeal lineage)
+// main.nf — Phase 1: Single-Cell RNA-seq Pipeline (Tbx1-cardiopharyngeal lineage)
 // 7-step workflow: download → object creation → QC → filter → normalize →
 // dim reduction → clustree
 // =============================================================================

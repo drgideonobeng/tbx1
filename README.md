@@ -320,6 +320,10 @@ spanning shared and condition-specific populations:
 - **WT-enriched, near-absent in KO** (Cluster 9): neural 
   crest (Sox10/Tfap2b/Dlx1/Dlx2) — confirmed at atlas level
 
+![Integrated scVI atlas of WT and Tbx1 conditional knockout cells across E8.5 and E9.5, showing 10 annotated cell types](figures/integrated_annotated_umap.png)
+
+*Integrated scVI atlas: annotated cell types across all four samples (WT E8.5/E9.5, KO E8.5/E9.5).*
+
 ### Differential expression and enrichment (Phase 3b)
 
 Pseudobulk DESeq2 (design `~ timepoint + genotype`) 
@@ -337,6 +341,10 @@ downregulation in cardiomyocytes:
 | Pharyngeal arch / paraxial | 103 | 5 | — |
 | Splanchnic mesoderm / SHF | 97 | 0 | Methylation (up) |
 
+![UMAP split by genotype showing differential cluster composition between WT and Tbx1 KO conditions](figures/integrated_by_genotype_umap.png)
+
+*Same atlas faceted by genotype. KO-enriched clusters (dorsal mesenchyme, pharyngeal arch) and the WT-specific neural crest population (Cluster 9) are visible as condition-specific structure.*
+
 **The most specific finding:** downregulation of trabecula 
 morphogenesis, ventricular trabecula myocardium 
 morphogenesis, cardioblast differentiation, and cardiac 
@@ -347,6 +355,12 @@ cardiomyocytes that do form.
 
 > **Note:** Results are hypothesis-generating — see 
 > [Statistical approach and limitations](#statistical-approach-and-limitations).
+
+#### GO enrichment
+
+![GO term enrichment dotplot showing top biological process terms across KO-affected cell types, with cardiac maturation pathways downregulated in cardiomyocytes](figures/go_enrichment_dotplot.png)
+
+*Top GO biological process terms across cell types. Cardiomyocyte cluster shows downregulation of trabecula morphogenesis and cardiomyocyte differentiation pathways — the most specific developmental finding.*
 
 ---
 
